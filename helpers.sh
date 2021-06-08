@@ -1,4 +1,4 @@
-source prompt.sh
+source ~/bash-helpers/prompt.sh
 
 alias bash-self-update="cd ~/bash-helpers && git pull && source ~/.bash_profile && source ~/.bashrc"
 
