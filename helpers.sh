@@ -1,6 +1,6 @@
 source ~/bash-helpers/prompt.sh
 
-alias bash-self-update="cd ~/bash-helpers && git pull && source ~/.bash_profile && source ~/.bashrc"
+alias bash-self-update="cd ~/bash-helpers && git pull origin master && source ~/.bash_profile && source ~/.bashrc"
 
 alias nbp="nano ~/.bash_profile"
 alias sbp="source ~/.bash_profile"
