@@ -1,4 +1,4 @@
-source prompt.sh
+source ~/bash-helpers/prompt.sh
 
 alias bash-self-update="cd ~/bash-helpers && git pull && source ~/.bash_profile && source ~/.bashrc"
 
@@ -27,3 +27,5 @@ alias dils="docker image ls"
 alias dps="docker ps"
 alias dpsa="docker ps -a"
 alias dex="docker exec -it $1 /bin/bash"
+alias dlog="docker logs $1"
+
