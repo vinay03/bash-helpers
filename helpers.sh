@@ -47,6 +47,8 @@ alias gps='git push origin $(git rev-parse --abbrev-ref HEAD)'
 BASHHELPERSHELP+=("gca  : Change Last commit message")
 alias gca="git commit --amend -m $1"
 
+BASHHELPERSHELP+=("gdif : Show all uncommited changes in brief.")
+alias gdif="git diff"
 
 
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # 
