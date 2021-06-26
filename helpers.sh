@@ -1,3 +1,4 @@
+#!/bin/bash
 source ~/bash-helpers/prompt.sh
 
 alias bash-self-update="cd ~/bash-helpers && git pull origin master && source ~/.bash_profile && source ~/.bashrc"
