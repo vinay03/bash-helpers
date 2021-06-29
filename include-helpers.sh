@@ -3,6 +3,8 @@
 BASHHELPERSHELP=("" "Command : Purpose")
 BASHHELPERSHELP+=("- - - - - - - - - - - - - - ")
 
+source ~/bash-helpers/helpers.sh
+
 while test $# -gt 0; do
   case "$1" in
     -g|--git)
