@@ -19,15 +19,10 @@ while test $# -gt 0; do
 			source ~/bash-helpers/prompt-helper.sh
 			shift
       ;;
-		-c|--colors)
-			source ~/bash-helpers/color-helpers.sh
-			shift
-      ;;
 		-a|--all)
 			source ~/bash-helpers/git-helpers.sh
 			source ~/bash-helpers/docker-helpers.sh
 			source ~/bash-helpers/prompt-helper.sh
-			source ~/bash-helpers/color-helpers.sh
 			shift
       ;;
     *)

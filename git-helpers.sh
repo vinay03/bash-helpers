@@ -14,7 +14,8 @@ alias gaa="git add ."
 BASHHELPERSHELP+=("gca  : To add all files to staging and make a commit with passed message")
 function gca() {
 	git add .
-	git commit -m $1
+	echo $1
+	git commit -m "${1}"
 }
 
 BASHHELPERSHELP+=("gck  : To checkout to another branch or to checkout changes in a file.")
