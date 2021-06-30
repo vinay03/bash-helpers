@@ -12,12 +12,17 @@
 
 2. Edit one of the following files according to your base operating system :
 - `~/.bashrc` for Linux
-- `~/.bash_profile` for your MacOS
+- `~/.bash_profile` for MacOS
 
 3. Append following code
 
-	`source ~/bash-helpers/helpers.sh`
+	`source ~/bash-helpers/include-helpers.sh --all`
 
+	`NOTE:` Instead of `--all` you can mention any one or more of the following flags.
+
+	- `-g | --git` : To use git helper comands. 
+	- `-d | --docker` : To use docker helper comands. 
+	- `-p | --prompt` : To use modified prompt message that features git related information
 
 
 ## Bash Self Update command
@@ -32,8 +37,8 @@ Run following command to print comands help in terminal
 ## Uninstall
 1. Edit one of the following files according to your base operating system :
 - `~/.bashrc` for Linux
-- `~/.bash_profile` for your MacOS
+- `~/.bash_profile` for MacOS
 
-2. Remove following code
+2. Remove following or similar code
 
-	`source ~/bash-helpers/helpers.sh`
+	`source ~/bash-helpers/include-helpers.sh --all`
