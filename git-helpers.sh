@@ -15,7 +15,6 @@ BASHHELPERSHELP+=("gca  : To add all files to staging and make a commit with pas
 unalias gca > /dev/null 2>&1
 function gca() {
 	git add .
-	echo $1
 	git commit -m "${1}"
 }
 
