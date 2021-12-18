@@ -24,6 +24,12 @@ function gck() {
 	git checkout $1
 }
 
+BASHHELPERSHELP+=("gckn  : To create a new branch and checkout to it.")
+unalias gckn > /dev/null 2>&1
+function gckn() {
+	git checkout -b $1
+}
+
 BASHHELPERSHELP+=("gbr  : To show List of Branches from local")
 alias gbr="git branch"
 
@@ -41,3 +47,6 @@ function grn() {
 
 BASHHELPERSHELP+=("gdif : Show all uncommited changes in brief.")
 alias gdif="git diff"
+
+BASHHELPERSHELP+=("gdfl : Show all uncommited changes in brief.")
+alias gdfl="git diff HEAD^ HEAD"
