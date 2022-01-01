@@ -50,3 +50,9 @@ alias gdif="git diff"
 
 BASHHELPERSHELP+=("gdfl : Show all uncommited changes in brief.")
 alias gdfl="git diff HEAD^ HEAD"
+
+BASHHELPERSHELP+=("gsl : Show commits one per line.")
+alias gsl="git log --pretty=oneline"
+
+BASHHELPERSHELP+=("ggp : Show git log using graph and pretty print.")
+alias ggp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
