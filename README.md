@@ -8,7 +8,7 @@
 
 
 ## Installation
-1. Clone this repository in your User root directory
+1. Clone this repository in your User's root directory
 
 2. Edit one of the following files according to your base operating system :
 - `~/.bashrc` for Linux
