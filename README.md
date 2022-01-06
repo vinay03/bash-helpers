@@ -25,7 +25,7 @@
 	- `-p | --prompt` : To use modified prompt message that features git related information
 
 
-## Bash Self Update command
+## Bash Self Update Command
 You can run `bash-self-update` command to update these scripts from time-to-time.
 
 
