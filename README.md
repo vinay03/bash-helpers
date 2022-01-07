@@ -14,7 +14,7 @@
 - `~/.bashrc` for Linux
 - `~/.bash_profile` for MacOS
 
-3. Append following code
+3. Append following code and save it. 
 
 	`source ~/bash-helpers/include-helpers.sh --all`
 
