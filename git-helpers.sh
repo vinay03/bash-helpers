@@ -52,7 +52,20 @@ BASHHELPERSHELP+=("gdfl : Show all uncommited changes in brief.")
 alias gdfl="git diff HEAD^ HEAD"
 
 BASHHELPERSHELP+=("gsl : Show commits one per line.")
-alias gsl="git log --pretty=oneline"
+unalias gsl > /dev/null 2>&1
+function gsl() {
+	NUM=${1:-10}    
+	git log --pretty=oneline -${NUM}
+}
 
 BASHHELPERSHELP+=("ggp : Show git log using graph and pretty print.")
 alias ggp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+
+function gupc()
+{
+    if [ "$1" == "" ]; then
+        git log origin/$(git rev-parse --abbrev-ref HEAD)..HEAD
+    else
+        git log origin/$1..HEAD
+    fi
+}
