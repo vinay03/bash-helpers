@@ -17,13 +17,24 @@ alias gck="git checkout $1"
 alias gbr="git branch"
 alias gpl='git pull origin $(git rev-parse --abbrev-ref HEAD)'
 alias gps='git push origin $(git rev-parse --abbrev-ref HEAD)'
-
+alias gsl='git log --oneline -n 10'
+function gupc()
+{
+    if [ "$1" == "" ]; then
+        git log origin/$(git rev-parse --abbrev-ref HEAD)..HEAD
+    else
+        git log origin/$1..HEAD
+    fi
+}
 # Chrome
-alias ojen='open -n -a "Google Chrome" --args "https://jenkins.tools.beachbody.com/"'
+# alias ojen='open -n -a "Google Chrome" --args "https://jenkins.tools.beachbody.com/"'
 
 
 # Docker
 alias dils="docker image ls"
 alias dps="docker ps"
 alias dpsa="docker ps -a"
-alias dex="docker exec -it $1 /bin/bash"
+function dex()
+{
+    docker exec -it $1 /bin/bash
+}
