@@ -54,5 +54,12 @@ alias gdfl="git diff HEAD^ HEAD"
 BASHHELPERSHELP+=("gsl : Show commits one per line.")
 alias gsl="git log --pretty=oneline"
 
+BASHHELPERSHELP+=("gme : Show user details")
+function gme() {
+	USERNAME=$(git config user.name)
+	EMAIL=$(git config user.email)
+	echo "${USERNAME} <${EMAIL}>"
+}
+
 BASHHELPERSHELP+=("ggp : Show git log using graph and pretty print.")
 alias ggp="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
