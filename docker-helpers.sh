@@ -27,7 +27,12 @@ function dlog() {
 }
 
 BASHHELPERSHELP+=("dst : Docker Stats")
-unalias dlog > /dev/null 2>&1
+unalias dst > /dev/null 2>&1
 function dst() {
 	docker stats $1
+}
+
+BASHHELPERSHELP+=("drm : Remove docker container")
+function drm() {
+	docker rm $1
 }
